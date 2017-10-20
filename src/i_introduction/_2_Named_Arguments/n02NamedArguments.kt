@@ -15,7 +15,8 @@ fun usage() {
 fun todoTask2(): Nothing = TODO(
     """
         Task 2.
-        Print out the collection contents surrounded by curly braces using the library function 'joinToString'.
+        Print out the collection contents surrounded by curly braces using the library
+        function 'joinToString'.
         Specify only 'prefix' and 'postfix' arguments.
 
         Don't forget to remove the 'todoTask2()' invocation which throws an exception.
@@ -24,6 +25,6 @@ fun todoTask2(): Nothing = TODO(
     references = { collection: Collection<Int> -> task1(collection); collection.joinToString() })
 
 fun task2(collection: Collection<Int>): String {
-    todoTask2()
-    return collection.joinToString()
+//    todoTask2()
+    return "{" + collection.joinToString() + "}"
 }
