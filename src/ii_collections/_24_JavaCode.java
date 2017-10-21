@@ -4,9 +4,7 @@ import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import util.JavaCode;
 
-import java.util.Collection;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class _24_JavaCode extends JavaCode {
     public Collection<String> doSomethingStrangeWithCollection(Collection<String> collection) {
@@ -33,5 +31,10 @@ public class _24_JavaCode extends JavaCode {
             }
         }
         return null;
+    }
+
+    public static void main(String[] args){
+        List<String> collection = Arrays.asList("a", "bb", "c", "dd", "ee");
+        System.out.println(new _24_JavaCode().doSomethingStrangeWithCollection(collection));
     }
 }
