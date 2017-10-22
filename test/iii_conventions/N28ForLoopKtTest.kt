@@ -19,7 +19,8 @@ class N28ForLoopKtTest {
                 expectedDateRange, actualDateRange)
     }
 
-    @Test fun testIterateOverEmptyRange() {
+    @Test(timeout = 1000)
+    fun testIterateOverEmptyRange() {
         var invoked = false
         iterateOverDateRange(MyDate(2014, 1, 1), MyDate(2013, 1, 1), { invoked = true })
         assertFalse("Handler was invoked on an empty range", invoked)
